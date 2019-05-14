@@ -1,0 +1,14 @@
+[
+    {
+        "imgUrl": "img/image-big1.png",
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus laborum placeat unde quod!" 
+    },
+    {
+        "imgUrl": "img/image-big2.png",
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus laborum placeat unde quod!" 
+    },
+    {
+        "imgUrl": "img/image-big3.png",
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus laborum placeat unde quod!" 
+    }
+]

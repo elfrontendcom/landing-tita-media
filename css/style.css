@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+
+* {box-sizing: border-box}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilos del menú */
+
+.menu {
+    padding: 10px 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.menu a {
+    float: right;
+    display: block;
+    color: #818181;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    transition: 0.3s;
+}
+
+/* Decidí colocar un pequeño borde al item activo del menú */
+
+.menu a:hover, .menu a.active {
+    background-color: #009779;
+    color: #ffffff;
+}
+.menu a.imagenLogo {
+    background-color: #fff;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+} 
+
+.menu .icon {
+    display: none;
+}
+
+.menu .icon:hover {
+    background-color: #009779;
+    color: #ffffff;
+}
+
+a.imagenLogo {
+    float: left;
+}
+
+.imagenLogo img {
+    float: left;
+    width: 150px;
+}
+
+/* Parte del cuerpo del sitio */
+.cuerpo {
+    padding-top: 40px;
+}
+
+.textoPrincipal{
+    width: 60%;
+    padding-top: 20px;
+    text-align: center;
+    color: #787878;
+}
+
+.textoPrincipal h2, .textoPrincipal h3 {
+    font-weight: normal;
+    color: #333333;
+    line-height: 10px;
+}
+.divisor {
+    width: 250px;
+    color: #009779;
+}
+.textoPrincipal h3 {
+    padding-bottom: 30px;
+}
+.textoPrincipal p {
+    font-size: 14px;
+    text-align: justify;
+    padding: 0 20px;
+}
+.textoPrincipal a {
+    color: #009779;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #009779;
+    padding: 10px;
+}
+.imagenPrincipal{
+    width: 40%;
+}
+.imagenPrincipal img {
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+}
+
+* {box-sizing: border-box}
+
+/* Se ocultaron los slides por defecto */
+
+.slides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* Botones Next & prev */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Posición de "next" a la derecha */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* En hover, añadimos un fondo que oscurece los cursores */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Texto de Slider */
+.text {
+    color: #f2f2f2;
+    font-size: 2em;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 30%;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Animación de fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.textoSlide {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+
+
+
+@media screen and (max-width: 1024px) {
+    .textoPrincipal {
+        width: 50%;
+    }
+    .imagenPrincipal {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .contenedor {
+        align-items: flex-end
+    }
+
+    .imagenPrincipal {
+        margin-bottom: -30px;
+    }
+
+    .text {
+        font-size: 1.5rem;
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .contenedor {
+        align-items: flex-start
+    }
+    .menu a {display: none;}
+    .menu a.imagenLogo {display: block !important;}
+    .menu.responsive {position: relative;}
+    
+    .menu.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .menu.responsive a.menuItem:first-child {
+        margin-top: 30px;
+    }
+    
+    .menu a.icon {
+        float: right;
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .text {
+        font-size: 1rem;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .cuerpo {
+        padding-top: 10px;
+    }
+
+    .textoPrincipal {
+        width: 100%;
+    }
+
+    .textoPrincipal h2{
+        line-height: 30px;
+    }
+    .textoPrincipal h3 {
+        line-height: 20px;
+    }
+    .imagenPrincipal {
+        padding: 30px;
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 460px) {
+    .text {
+        font-size: 0.7rem;
+        width: 90%;
+        margin-left: 5%;
+    }
+}
